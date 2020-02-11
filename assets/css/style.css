@@ -1,0 +1,507 @@
+*{ 
+  margin: 0px; 
+  padding:0px;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins';
+  line-height: 1.5em;
+  padding-top: 0px;
+}
+
+
+
+@font-face { 
+  font-family: 'Mogan'; 
+  src: url('../webfonts/Mogan.otf')
+}
+
+h1, h2{ 
+    color:  #BE1622;
+    /*color:  #BE1622;*/
+    font-family: 'Mogan';
+    padding-bottom:30px ;
+}
+p{font-size: 1em;}
+
+header, footer, nav{background-color:  #BE1622;}
+
+
+
+p, form{
+    font-size: 12pt; 
+    line-height: 20pt;
+}
+
+header{
+    top:0px;
+    position: fixed;
+    width: 100%;
+    height: 80px; 
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    overflow: hidden;
+}
+
+nav{
+    float: right;
+}
+
+header img{
+    padding: 20px 20px;
+    max-width: 150px;
+}
+
+nav ul{
+    list-style: none;
+    text-align: center;
+    
+}
+nav ul li{
+    display: inline-block;
+}
+nav li{
+    list-style-type: none;
+    padding: 30px 30px 0 30px;
+    display: inline;
+}
+nav a {
+  color: #ffffff;
+  font-size: 12pt;
+  text-decoration: none;
+  padding: 20px 0;
+}
+
+nav a:hover { 
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    padding: 6px 0;
+    transition: 0.3s ease;
+}
+.parallax {
+  background-image: url("../images/boke.jpg");
+  height: 300px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.parallax img{
+  margin-top: 30px;
+  max-width: 400px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+h1{padding: 10px 0px 0px 50px;}
+
+main{
+  width: 70%;
+  float: left;
+}
+
+main section{
+  padding: 30px;
+  margin-top: 60px;
+}
+main section p{
+  text-align: justify;
+  margin-bottom: 16px;
+}
+main h1{
+ margin-bottom: 60px;
+}
+article {
+  padding: 40px;
+  border-radius: 30px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  max-width: 700px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.096);
+}
+article a{scroll-margin-top: 120px;}
+
+aside{
+    width: 30%;
+    float: left;
+    margin-top: 100px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.096);
+    border-radius: 30px;
+}
+aside h3{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-top-left-radius: 30px;
+    background-color: #BE1622;
+    padding: 10px;
+}
+aside ul li a{
+     text-decoration: none;
+     color:black;
+     padding: 0 20px 20px 20px;
+}
+aside ul li a:hover{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+aside ul li{
+    border-bottom: 1px solid white;
+    list-style: none;
+    margin-bottom: 16px;
+}
+
+
+  iframe{
+    border-radius: 30px;
+    margin: 20px;
+    max-width: 100%;
+  }
+
+  #btn-wa {
+    display: block;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+  }
+table{
+  caption-side: bottom;
+  table-layout: auto; width: 100%;
+  border-collapse: collapse;
+  border-radius: 30px;
+  margin-top: 20px;
+  text-align: center; 
+}
+table caption{padding: 20px;}
+
+td:first-child{
+  background-color: silver;
+  color: #BE1622;
+}
+tr:nth-child(even) {background: #fff}
+tr:nth-child(odd) {background: #ccc}
+th{
+  background-color:  #BE1622;
+  padding: 10px;
+  color: white;
+  font-size: 14pt;
+}
+.izquierda{
+  border-top-left-radius: 30px
+}
+.derecha{
+  border-top-right-radius: 30px
+}
+td { 
+	padding: 30px;
+}
+
+form{
+    padding: 60px;
+    max-width: 400px;
+    background-color: #E7E7E7;
+    margin: 0 auto;
+    border-radius: 30px;
+  }
+.control{
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; 
+    border: none; 
+    color: black; 
+    font-size: 12pt;
+    resize: none;
+    border-radius: 20px;
+  }
+
+.checkbox{
+  float: none;
+}
+
+.boton{
+  border-radius: 20px;
+  outline: 0;
+  background:  #BE1622;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.boton:hover,.boton:active,.boton:focus {
+  background:rgb(158, 20, 29);
+  text-transform: uppercase;
+}
+footer{
+  width: 100%;
+  padding:60px;
+  clear: both;
+}
+footer p{
+  color: white;
+  text-align: center
+}
+
+footer a 
+{
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 6px 0;
+  }
+
+footer a:hover 
+{
+  border-bottom: 2px solid #ffffff;
+}
+
+@media (max-width:768px)
+{
+  aside, .enlaces{
+   display: none;
+  }
+  section{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  body{
+     background:  #BE1622;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  main{
+      width: 100%;
+      display:block;
+  }
+  aside{
+      width: 100%;
+      display: block;
+  }
+  footer{
+      width: 100%;
+      display: block;
+  }
+}
+
+a[href$=".pdf"]:after {
+background:url('../images/pdf.png');
+display:inline-block;
+}
+
+.auto {
+  width: 300px;
+  height: 200px;
+  overflow: auto;
+}
+
+p.big{
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+.fa-star, .fa-thumbs-up, .fa-check{
+  font-size: 12pt;
+  display: block;
+  margin-bottom: 30px;
+}
+.info-box{
+  
+  margin: 0px auto;
+  padding: 110px 0 110px 0;
+  
+  text-align: center;
+  width: 100%;
+}
+.info-box h2{
+  margin-bottom: 30px;
+}
+#flex-p{
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#flex-p p{
+  padding: 30px;
+  max-width: 300px;
+}
+
+#btn-fixed {
+	display: block;
+	position: fixed;
+  bottom: 10px;
+	right: 10px;
+}
+
+/*Ejemplo Call to action*/
+.call-to-action{
+  max-width: 700px;
+  margin: 150px auto;
+  padding: 0 30px 0 30px;
+  text-align: center;
+}
+p.big{
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+.call-to-action h2, .call-to-action p, .call-to-action button{
+  margin-bottom: 20px;
+}
+button{
+  padding: 15px 40px 15px 40px;
+  background-color:#BE1622;
+  font-size: 1em;
+  color: white;
+   -webkit-transition: background 1s linear;
+  transition: background 0.5s linear;
+  border-radius: 30px;
+}
+button:hover{
+  background-color: rgb(158, 20, 29);
+}
+
+/*Ejemplo con cajas flexibles*/
+.info-box{
+  background-color:#BE1622;
+  margin: 0px auto;
+  padding: 110px 0 110px 0;
+  color: white;
+  text-align: center;
+  border-radius: 30px;
+}
+.info-box h2{
+  margin-bottom: 30px;
+  color: white;
+}
+#flex-p{
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+#flex-p p{
+  padding: 30px;
+  max-width: 300px;
+}
+.fa-star, .fa-thumbs-up, .fa-check{
+  font-size: 2.7em;
+  display: block;
+  color: white;
+  margin-bottom: 30px;
+}
+
+/*Ejemplo con floats y porcentajes*/
+.description-box{
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.img-container {
+  margin: 50px 0 50px 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  float: left;
+  width: 50%;
+  padding: 30px;
+}
+.img-container img, img-container p{
+  width: 100%;
+  padding-bottom: 10px;
+}
+.img-container p{
+ text-align: justify;
+}
+
+.licenciaCC{
+  font-size: 8pt;
+}
+#audios{display: none;}
+
+.contenedorAnimacion img {
+  width: 20%;
+	animation-duration: 5s;
+	animation-name: logoAnimacion;
+	animation-iteration-count: infinite;
+  }
+@keyframes logoAnimacion{
+	from {
+		-webkit-transform: rotate(0deg);
+        transform: rotateY(0deg);
+	}
+  50%{
+		-webkit-transform: rotate(180deg);
+        transform: rotateY(180deg);
+	} 
+	to {
+		-webkit-transform: rotate(360deg);
+        transform: rotateY(360deg);
+		}
+}
+.controlesVideoAudio{
+  background-color: #BE1622;
+  padding: 15px;
+  color: white;
+  border-radius: 10px;
+  width: 100%;
+}
+.controlesVideoAudio input{
+  border-radius: 10px;
+  background-color: white;
+  padding: 10px;
+  color: #BE1622;
+  cursor: pointer;
+  display: inline-block;
+  width: 11%;
+  margin: 0 2px 0 2px;
+  text-align: center;
+}
+
+.controlesVideoAudio input:hover{
+  background-color:rgb(158, 20, 29);
+  color: white;
+}
+
+.contenedorAnimacion{overflow: hidden;}
+.contenedorAnimacion p{
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+video{
+  max-width: 100%;
+}
+#lienzoCanvas{
+  background:#BE1622;
+  max-width: 100%;
+}
+#lienzo{
+  border-radius: 30px;
+  max-width: 100%;
+}
+
+
+
